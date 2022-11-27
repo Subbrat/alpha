@@ -14,18 +14,20 @@
 		<form method="post" action="register.php">
 			<?php include('errors.php'); ?>
 			<div class="input-group">
-				<input type="text" required class="input" placeholder="username" name="username"
+				<input type="text" required class="input" autocomplete="off" placeholder="username" name="username"
 					value="<?php echo $username; ?>">
 			</div>
 			<div class="input-group">
-				<input type="email" required class="input" placeholder="email" name="email"
+				<input type="email" required class="input" autocomplete="off" placeholder="email" name="email"
 					value="<?php echo $email; ?>">
 			</div>
 			<div class="input-group">
-				<input type="password" required class="input" placeholder="password" name="password_1">
+				<input type="password" required class="input" autocomplete="off" placeholder="password"
+					name="password_1">
 			</div>
 			<div class="input-group">
-				<input type="password" required class="input" placeholder="confirm password" name="password_2">
+				<input type="password" required class="input" autocomplete="off" placeholder="confirm password"
+					name="password_2">
 			</div>
 			<div class="input-group">
 				<button type="submit" class="btn" name="reg_user">Register</button>
