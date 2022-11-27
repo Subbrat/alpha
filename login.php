@@ -4,7 +4,6 @@
 
 <head>
     <title>Alpha - Login</title>
-    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
     <link rel="stylesheet" type="text/css" href="./s6css.css">
     <link rel="stylesheet" type="text/css" href="./main.css">
 </head>
@@ -15,13 +14,15 @@
         <form method="post" action="login.php">
             <?php include('errors.php'); ?>
             <div>
-                <input type="text" class="input" name="username" autocomplete="off" placeholder="username">
+                <input type="text" required class="input" name="username" id="username" autocomplete="off"
+                    placeholder="username">
             </div>
             <div>
-                <input type="password" class="input" name="password" autocomplete="off" placeholder="password">
+                <input type="password" required class="input" name="password" id="password" autocomplete="off"
+                    placeholder="password">
             </div><br>
             <div>
-                <button type="submit" class="btn" name="login_user">Login</button>
+                <button type="submit" id="submit" class="btn" name="login_user">submit</button>
             </div>
             <p>
                 Not yet a member? <a href="register.php" class="s6-hover-text-green">Sign up</a>

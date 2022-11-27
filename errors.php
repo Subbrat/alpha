@@ -1,9 +1,11 @@
+<link rel="stylesheet" href="./s6css.css">
+<link rel="stylesheet" href="./hider.css">
 <?php if (count($errors) > 0): ?>
 <div class="error">
 	<?php foreach ($errors as $error): ?>
-	<p>
+	<div class="s6-panel s6-text-red" id="hidee">
 		<?php echo $error ?>
-	</p>
+	</div>
 	<?php endforeach ?>
 </div>
 <?php endif ?>

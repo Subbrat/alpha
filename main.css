@@ -12,6 +12,7 @@ margin-inline: auto;
 
 .main {
 min-width: 60%;
+min-height: 80%;
 }
 
 .input {
