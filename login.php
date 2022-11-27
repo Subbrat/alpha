@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Alpha - Login</title>
+    <title>Alpha - Log in</title>
     <link rel="stylesheet" type="text/css" href="./s6css.css">
     <link rel="stylesheet" type="text/css" href="./main.css">
 </head>
@@ -25,7 +25,7 @@
                 <button type="submit" id="submit" class="btn" name="login_user">submit</button>
             </div>
             <p>
-                Not yet a member? <a href="register.php" class="s6-hover-text-green">Sign up</a>
+                Not yet a member? <a href="register.php" class="">Sign up</a>
             </p>
         </form>
     </div>
