@@ -15,11 +15,11 @@
 			<?php include('errors.php'); ?>
 			<div class="input-group">
 				<input type="text" required class="input" autocomplete="off" placeholder="username" name="username"
-					value="<?php echo $username; ?>">
+					onkeyup="return loww(this);" value="<?php echo $username; ?>">
 			</div>
 			<div class="input-group">
 				<input type="email" required class="input" autocomplete="off" placeholder="email" name="email"
-					value="<?php echo $email; ?>">
+					onkeyup="return loww(this);" value="<?php echo $email; ?>">
 			</div>
 			<div class="input-group">
 				<input type="password" required class="input" autocomplete="off" placeholder="password"
@@ -27,7 +27,9 @@
 			</div>
 			<div class="input-group">
 				<input type="password" required class="input" autocomplete="off" placeholder="confirm password"
-					name="password_2">
+					name="password_2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+					title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+					bv>
 			</div>
 			<div class="input-group">
 				<button type="submit" class="btn" name="reg_user">Register</button>
@@ -37,6 +39,11 @@
 			</p>
 		</form>
 	</div>
+	<script>
+		function loww(strInput) {
+			strInput.value = strInput.value.toLowerCase();
+		}
+	</script>
 </body>
 
 </html>
